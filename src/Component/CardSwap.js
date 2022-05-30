@@ -19,6 +19,7 @@ import Img6 from '../assets/Nfts/bighead-6.svg'
 import Img7 from '../assets/Nfts/bighead-7.svg'
 import Img8 from '../assets/Nfts/bighead-8.svg'
 
+import Arrow from '../assets/Arrow.svg'
 
 const Container = styled.div`
 width:25vw ;
@@ -35,6 +36,33 @@ height:50vh ;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.swiper-button-next{
+  color:${prop => prop.theme.text} ;
+  right:0 ;
+  width:4rem ;
+  top:60%;
+  background-image: url(${Arrow});
+  background-position:center ;
+  background-size:cover ;
+
+  &:after{
+    display:none ;
+  }
+}
+.swiper-button-prev{
+  color:${prop => prop.theme.text} ;
+  left:0 ;
+  width:4rem ;
+  top:60%;
+  transform:rotate(180deg) ;
+  background-image: url(${Arrow});
+  background-position:center ;
+  background-size:cover ;
+
+  &:after{
+    display:none ;
+  }
 }
 `
 

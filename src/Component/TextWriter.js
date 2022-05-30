@@ -7,7 +7,7 @@ const Title = styled.h2`
 font-size:${prop => prop.theme.fontxxl} ;
 text-transform: capitalize;
 width:80% ;
-${prop => prop.theme.text};
+color: ${prop => prop.theme.text};
 align-self: flex-start ;
 
 span{
