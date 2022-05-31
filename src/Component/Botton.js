@@ -37,10 +37,10 @@ transition:all 0.2s ease;
 }
 `
 
-const Botton = ({text,link}) => {
+const Botton = ({ text, link, onclick }) => {
   return (
-    <Btn>
-        <a href={link} target='_blank' rel='noreferrer'>{text}</a>
+    <Btn onClick={onclick}>
+      <a href={link} target='_blank' rel='noreferrer'>{text}</a>
     </Btn>
   )
 }
